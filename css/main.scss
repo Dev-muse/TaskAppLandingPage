@@ -4,6 +4,7 @@
 // color palette
 :root {
   --primary-color: #4265d6;
+  --secondary-color: #20272e;
   --accent: #444;
 }
 
@@ -97,3 +98,39 @@ ul {
     margin-top: 3em;
   }
 }
+
+// features section
+
+.features-section {
+  background-color: var(--secondary-color);
+  color: #fff;
+
+  .features-list {
+    margin: 0;
+    padding: 1em;
+
+    li {
+      font-size: 1.1em;
+      margin-bottom: 1em;
+      margin-left: 2em;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-image: url("../images/bullet.svg");
+        background-size: contain;
+        margin-right: 0.5em;
+        margin-left: -2em;
+      }
+    }
+  }
+}
+
+.features-section img {
+  display: none;
+}
+
+// Testimonials section
