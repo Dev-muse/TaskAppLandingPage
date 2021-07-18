@@ -1,15 +1,32 @@
 // Font family
-@import url("https://fonts.googleapis.com/css2?family=Karla,poppins:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;900display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+// color palette
 :root {
   --primary-color: #4265d6;
+  --accent: #444;
 }
+
+// Global rules
+
 body {
   background-color: #f2f2f2;
   margin: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+//Navbar
 .navbar {
   background-color: #fff;
   padding: 1em;
@@ -19,8 +36,64 @@ body {
     font-size: 1.2em;
     color: #000;
     font-weight: bold;
+
     span {
       color: var(--primary-color);
     }
+  }
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  .left-col {
+    .subhead {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: var(--accent);
+      letter-spacing: 0.3em;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0.3em;
+      line-height: 1.3em;
+      text-transform: capitalize;
+    }
+    .primary-cta {
+      padding: 0.6em 1.3em;
+      font-size: 1.4em;
+      color: #fff;
+      border-radius: 5em;
+      background-color: var(--primary-color);
+      -webkit-border-radius: 5em;
+      -o-border-radius: 5em;
+      -ms-border-radius: 5em;
+      font-weight: bold;
+      display: inline-block;
+      -moz-border-radius: 5em;
+    }
+    .watch-video-cta {
+      display: block;
+      margin-top: 1em;
+      img {
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .hero-img {
+    width: 70%;
+    margin-top: 3em;
   }
 }
