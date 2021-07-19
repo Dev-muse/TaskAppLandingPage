@@ -46,6 +46,44 @@ section {
   display: none;
 }
 
+.navbar nav.menu-btn {
+  display: block;
+}
+
+.navbar nav {
+  position: fixed;
+  z-index: 99;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: var(--secondary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+.navbar nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+.navbar nav li a {
+  color: #fff;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.navbar nav li a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.navbar .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +175,11 @@ ul.features-list li:before {
 }
 
 .testimonials-section li {
-  background-color: #294cbc;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   text-align: center;
   padding: 2em 1em;
   margin: 0 auto 5em;
@@ -153,7 +195,7 @@ ul.features-list li:before {
   width: 5em;
   margin-top: -5em;
   height: 5em;
-  border: 5px solid #294cbc;
+  border: 5px solid rgba(41, 76, 188, 0.25);
   border-radius: 5em;
   -webkit-border-radius: 5em;
   -moz-border-radius: 5em;

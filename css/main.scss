@@ -51,6 +51,44 @@ section {
     display: none;
   }
 
+  nav.menu-btn {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 99;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background-color: var(--secondary-color);
+    height: 100vh;
+    padding: 1em;
+    ul.primary-nav {
+      margin-top: 5em;
+    }
+
+    li {
+      a {
+        color: #fff;
+        display: block;
+        padding: 0.5em;
+        font-size: 1.3em;
+        text-align: right;
+        &:hover {
+          color: var(--primary-color);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mobile-menu-exit {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
   .container {
     display: flex;
     place-content: space-between;
@@ -145,7 +183,9 @@ ul.features-list {
   background-color: var(--primary-color);
 
   li {
-    background-color: darken(#4265d6, 10%);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
     text-align: center;
     padding: 2em 1em;
     margin: 0 auto 5em;
@@ -159,7 +199,7 @@ ul.features-list {
       width: 5em;
       margin-top: -5em;
       height: 5em;
-      border: 5px solid darken(#4265d6, 10%);
+      border: 5px solid darken(rgba(66, 101, 214, 0.25), 10%);
       border-radius: 5em;
       -webkit-border-radius: 5em;
       -moz-border-radius: 5em;
